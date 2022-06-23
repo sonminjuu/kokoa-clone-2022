@@ -18,6 +18,9 @@ body{
     color: #2e363e;
 }
 
+.main-screen{
+    padding: 0 var(--horizontal-space);
+}
 
 
 
