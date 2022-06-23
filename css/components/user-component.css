@@ -21,6 +21,7 @@
     margin-top: 8px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 0.96em;
+    display: inline-block;
 }
 
 .user-component__avatar--xl{
@@ -49,4 +50,20 @@
 
 .user-component__column-number{
     margin-top: 14px;
+}
+
+.user-component__svg{
+    width: 90px;
+    height: 38px;
+}
+
+.user-component__text-i{
+    width: 15px;
+    height: 13px;
+    border: 1px solid #D34D43;
+    border-radius: 10px;
+    color: #D34D43;
+    padding-top: 2px;
+    font-size: 0.8em;
+    text-align: center;
 }
