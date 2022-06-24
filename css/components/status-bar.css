@@ -1,12 +1,15 @@
 .status-bar{
     display: flex;
+    height: 16px;
     justify-content: center;
     padding: 5px 3px;
+    margin: 5px 0;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #ffffff;
+    box-sizing: border-box;
 }
 
 .status-bar__column{

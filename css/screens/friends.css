@@ -26,3 +26,12 @@
 .friends-screen__channel-header>span{
     font-size: 0.9em;
 }
+
+.friends-screen__channel-friends{
+    margin-right: 8px;
+}
+
+.friends-screen__channel-friends__text{
+    margin-right: auto;
+    opacity: 0.7;
+}

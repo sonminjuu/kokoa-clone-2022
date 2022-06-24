@@ -6,6 +6,10 @@
     padding: 4px;
 }
 
+.user-component__column{
+    position: relative;
+}
+
 .user-component__avatar{
     width: 60px;
     height: 60px;
@@ -66,4 +70,29 @@
     padding-top: 2px;
     font-size: 0.8em;
     text-align: center;
+}
+
+/* Chates.html */
+.user-component__mar{
+    margin-bottom: 14px;
+}
+
+/* friends.html */
+.user-component__marb{
+    margin-bottom: 6px;
+}
+
+.friends__online{
+    background-color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 2.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    font-size: 0.8em;
 }

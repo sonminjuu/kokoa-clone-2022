@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+
+<body class="chat-screen">
+    <div class="chat-screen-header__fixed">
+        <div class="status-bar chat-screen__bar">
+            <div class="status-bar__column">
+                <span>No Service</span>
+                <i class="fa-solid fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <span>110%</span>
+                <i class="fa-solid fa-battery-full"></i>
+                <i class="fa-solid fa-bolt"></i>
+            </div>
+        </div>
+
+        <header class="alt-header" style="position: relative; margin-bottom: 0;">
+            <div class="alt-header__column">
+                <i class="fa-solid fa-angle-left fa-xl" onclick="history.back()"></i>
+            </div>
+            <div class="alt-header__column" style="position: absolute;">
+                <h1 class="alt-header__title alt-header__title_marb">Min-Ju</h1>
+            </div>
+            <div class="alt-header__column alt-header__column__la">
+                <span><i class="fa-solid fa-magnifying-glass fa-lg" style="font-size:1.35em;"></i></span>
+                <span class="alt-header__column__marl"><i class="fa-solid fa-bars" style="font-size:1.35em;"></i></span>
+            </div>
+        </header>
+    </div>
+
+    <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Tuesday, June 30, 2022
+        </div>
+
+        <div class="message-row">
+            <img src="https://i.pinimg.com/originals/ee/83/f7/ee83f7e796d58c79a528e2ba6ecb9934.jpg">
+            <div class="message-row__content">
+                <span class="message__author">Min-Ju</span>
+                <div class="message__info">
+                    <span class="message_bubble">Hi!</span>
+                    <span class="message_time">21:27</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="message-row message-row--own">
+            <div class="message-row__content">
+                <div class="message__info">
+                    <span class="message_bubble message_bubble_r">Hi zz</span>
+                    <span class="message_time">21:27</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <form class="reply">
+        <div class="reply__column">
+            <i class="fa-solid fa-square-plus"></i>
+        </div>
+        <div class="reply__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="fa-solid fa-face-smile reply__column_ir"></i>
+            <button class="reply__column_btn">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+    </form>
+
+    <script src="https://kit.fontawesome.com/0c71840302.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
