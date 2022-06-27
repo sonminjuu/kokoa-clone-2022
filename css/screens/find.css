@@ -100,3 +100,23 @@
 .open-post__heart span{
     margin-left: 5px;
 }
+
+@keyframes fondicons{
+    0%{
+        color: #ffffff;
+        transform: none;
+    }
+    50%{
+        color: tomato;
+        transform: scale(1.1);
+    }
+    100%{
+        color: #ffffff;
+        transform: none;
+    }
+}
+
+.open-post__heart:hover i{
+    will-change: transform;
+    animation: fondicons 1s linear infinite;
+}

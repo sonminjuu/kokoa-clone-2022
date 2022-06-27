@@ -1,6 +1,8 @@
+
 .chat-screen{
     background-color: #B2C7D9;
-    
+    width: 100%;
+    height: 500vh;
 }
 
 .chat-screen-header__fixed{
@@ -16,11 +18,27 @@
     z-index: 2;
 }
 
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: 0;
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
 .chat-screen>.main-chat{
-    padding-top: 110px;
+    padding-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.3s linear;
 }
 
 .chat__timestamp{
@@ -85,6 +103,7 @@
 }
 
 .message-row--own{
+    width: 100%;
     justify-content: flex-end;
 }
 
@@ -115,14 +134,6 @@
 	margin-right: -20px;
 }
 
-/* .message-row--own .message_bubble{
-    order: 1;
-}
-
-.message-row--own .message_time{
-    order: 0;
-} */
-
 .message-row--own .message__info{
     flex-direction: row-reverse;
 }
@@ -138,6 +149,7 @@
     align-items: center;
     box-sizing: border-box;
     height: 60px;
+    transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child{
@@ -145,7 +157,7 @@
 }
 
 .reply .reply__column:last-child{
-    width: 90%;
+    width: 85%;
     position: relative;
     display: flex;
     align-items: center;
@@ -153,9 +165,10 @@
 
 .reply input{
     width: 100%;
-    height: 30px;
+    padding: 8px;
     border: var(--main-border);
     border-radius: 20px;
+    transition: all 0.3s ease-in-out;
 }
 .reply__column:last-child i,
 .reply input{
@@ -184,4 +197,43 @@
     width: 31px;
     padding-top: 12px;
     height: 43px;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button{
+    transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button{
+    opacity: 0;
+}
+
+.reply input:focus{
+    width:85vw;
+    transform: translateX(0%) translateY(-80px);
+}
+
+.reply:focus-within{
+    transform: translateY(80px);
+}
+
+@keyframes messageImg{
+    0%{
+        transform: none;
+    }
+
+    50%{
+        transform: translateX(5px);
+    }
+
+    100%{
+        transform: none;
+    }
+}
+
+.message-row img{
+    animation: messageImg 1s ease-in-out;
 }
