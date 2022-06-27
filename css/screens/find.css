@@ -101,7 +101,6 @@
     bottom: 5px;
     right: 2px;
     font-size: 0.68em;
-    width: 40px;
 }
 
 .open-post__heart span{
@@ -115,7 +114,7 @@
     }
     50%{
         color: tomato;
-        transform: scale(1.4);
+        transform: scale(1.2);
     }
     100%{
         color: #ffffff;
