@@ -184,6 +184,14 @@
         <span>Your screen is too big</span>
     </div>
 
+    <script>
+        $(document).bind(
+            'touchmove',
+            function (e) {
+                e.preventDefault();
+            }
+        );
+    </script>
     <script src="https://kit.fontawesome.com/0c71840302.js" crossorigin="anonymous"></script>
 </body>
 
