@@ -238,16 +238,3 @@
 .message-row img{
     animation: messageImg 1s ease-in-out;
 }
-
-/* Safari 9.0+ (iOS Only) */
-
-@supports (-webkit-text-size-adjust:none) and (not (-ms-accelerator:true))
-and (not (-moz-appearance:none))
-{
-
-  .safari_only {
-    color:#0000FF; 
-    background-color:#CCCCCC; 
-  }
-
-}
