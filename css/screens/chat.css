@@ -183,11 +183,11 @@
 
 .reply__column_btn{
     overflow: hidden;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 18px;
     position: absolute;
-    right: 0;
+    right: 1px;
     border: none;
 }
 
@@ -195,9 +195,9 @@
     font-size: 16px;
     background-color: var(--yellow);
     margin: -20px 0px;
-    width: 31px;
+    width: 35px;
     padding-top: 12px;
-    height: 43px;
+    height: 35px;
     color: #2E363E;
 }
 
