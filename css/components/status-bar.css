@@ -2,14 +2,14 @@
     display: flex;
     height: 16px;
     justify-content: center;
-    padding: 5px 3px;
-    margin: 5px 0;
+    padding: 10px 3px;
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #ffffff;
     box-sizing: border-box;
+    z-index: 9;
 }
 
 .status-bar__column{
