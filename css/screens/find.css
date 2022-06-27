@@ -1,10 +1,13 @@
+.findScrolling{
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height:100%;
+}
+
 .recommended-friends{
     padding: 12px 0px;
     border-top: var(--main-border);
     border-bottom: var(--main-border);
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    height:100%;
 }
 
 .recommended-friends__title{
