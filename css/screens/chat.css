@@ -169,6 +169,7 @@
     border: var(--main-border);
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
+    z-index: 9;
 }
 .reply__column:last-child i,
 .reply input{
